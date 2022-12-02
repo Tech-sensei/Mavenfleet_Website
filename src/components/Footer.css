@@ -1,0 +1,149 @@
+.footer {
+    padding: 5rem;
+    background-color: hsla(350, 100%, 29%, 0.8);
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.footer__container--contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 2em;
+    min-height: 15em;
+}
+
+.footer__header {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.footer__header span {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    color: black
+}
+
+.footer__texts {
+    color: white;
+    font-size: .85rem;
+    margin-bottom: 1rem;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 1.5rem;
+    flex-direction: row;
+    margin-top: 0.5em;
+    color: var(--clr-primary-3);
+    cursor: pointer;
+}
+
+.footer__container--contents-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer__container--contents-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__container--contents-links li:not(:first-child) {
+    margin-top: 0.8em;
+}
+
+.footer__container--contents-links ul li a {
+    color: var(--clr-primary-3);
+    text-decoration: none;
+}
+
+.footer__container--contents-links ul li a:hover {
+    color: var(--clr-primary-5);
+}
+
+input,
+.footer-btn {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    
+}
+
+.footer-btn {
+    border: transparent;
+    background-color: var(--clr-primary-2);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .footer {
+        padding: 5rem 1rem;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer__container--contents {
+        padding: 0;
+    }
+
+
+    .footer__socials {
+        font-size: 1.125rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .footer {
+        padding: 5rem 0;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__container--contents {
+        padding: 0;
+    }
+
+    .footer__container--contents-links {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .footer__socials {
+        font-size: 1rem;
+    }
+
+}
