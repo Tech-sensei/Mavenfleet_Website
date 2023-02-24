@@ -24,7 +24,7 @@ Variables
   --radius: 0.5rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1100px;
+  --max-width: 1200px;
   --fixed-width: 620px;
   --body-font: 'Sniglet', cursive;
   /*========== z index ==========*/
@@ -151,9 +151,9 @@ p {
 
 .section__header--title {
   color: var(--clr-primary-1);
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-transform: capitalize;
-  letter-spacing: var(--spacing);
+  letter-spacing: 0;
 }
 
 .section__header--description {
@@ -219,4 +219,57 @@ p {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--clr-primary-4);
+}
+
+/*=============== LOADING ANIMATION ===============*/
+.flip-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+
+.flip-square:before {
+  -webkit-animation: flip-square 1.5s infinite;
+  animation: flip-square 1.8s infinite;
+  background-color: var(--clr-primary-1);
+  content: '';
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+
+@-webkit-keyframes flip-square {
+  0% {
+    -webkit-transform: perspective(50px) rotate(45deg) rotateX(0deg) rotateY(0deg);
+    transform: perspective(50px) rotate(45deg) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(0deg);
+    transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(-180deg);
+    transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+
+@keyframes flip-square {
+  0% {
+    -webkit-transform: perspective(50px) rotate(45deg) rotateX(0deg) rotateY(0deg);
+    transform: perspective(50px) rotate(45deg) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+    -webkit-transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(0deg);
+    transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(0deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(-180deg);
+    transform: perspective(50px) rotate(45deg) rotateX(-180deg) rotateY(-180deg);
+  }
 }
