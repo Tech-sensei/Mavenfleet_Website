@@ -40,28 +40,29 @@ export const socials = [
 const questions = [
   {
     id: 1,
-    title: "Do I have to allow the use of cookies?",
-    info: "Unicorn vinyl poutine brooklyn, next level direct trade iceland. Shaman copper mug church-key coloring book, whatever poutine normcore fixie cred kickstarter post-ironic street art.",
+    title: "What makes MavenFleet's approach to talent development unique?",
+    info: " MavenFleet takes a unique approach to talent development that focuses not only on skills development but also on cultural fit. They work with candidates to ensure that they possess both the necessary skills and the right cultural fit for a particular company or position.",
   },
   {
     id: 2,
-    title: "How do I change my My Page password?",
-    info: "Coloring book forage photo booth gentrify lumbersexual. Migas chillwave poutine synth shoreditch, enamel pin thundercats fashion axe roof party polaroid chartreuse.",
+    title: "How does MavenFleet's mentoring program work?",
+    info: "MavenFleet's mentoring program is designed to prepare candidates for specific company needs. For example, their current program focuses on Android programming. Candidates are carefully selected based on their skills and potential, and they work with MavenFleet to develop their skills in a way that will make them ideal candidates for top talent positions in visionary companies.",
   },
   {
     id: 3,
-    title: "What is BankID?",
-    info: "Enamel pin fam sustainable woke whatever venmo. Authentic asymmetrical put a bird on it, lumbersexual activated charcoal kinfolk banjo cred pickled sartorial.",
+    title:
+      "How does MavenFleet ensure that candidates are a good fit for company culture?",
+    info: "MavenFleet recognizes that the right talent is not only skilled but also a good fit for company culture. They work with candidates to ensure that they possess the right traits and values that align with the company's culture.",
   },
   {
     id: 4,
-    title: "Whose birth number can I use?",
-    info: "Edison bulb direct trade gentrify beard lo-fi seitan sustainable roof party franzen occupy squid. Knausgaard cronut succulents, scenester readymade shabby chic lyft. Copper mug meh vegan gentrify.",
+    title: "How does MavenFleet help companies find the right talent?",
+    info: " MavenFleet's unique approach to talent development and mentoring ensures that they can identify candidates who possess both the necessary skills and the right cultural fit for a particular company or position. They work with companies to understand their specific needs and requirements and then prepare candidates accordingly.",
   },
   {
     id: 5,
-    title: "When do I recieve a password ordered by letter?",
-    info: "Locavore franzen fashion axe live-edge neutra irony synth af tilde shabby chic man braid chillwave waistcoat copper mug messenger bag. Banjo snackwave blog, microdosing thundercats migas vaporware viral lo-fi seitan ",
+    title: "What kind of companies does MavenFleet work with?",
+    info: "MavenFleet works with visionary companies that are looking for top talent to help them achieve their goals and drive innovation. They work with companies across various industries and are dedicated to helping these companies find the right talent to meet their specific needs.",
   },
 ];
 
