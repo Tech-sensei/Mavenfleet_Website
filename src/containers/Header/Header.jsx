@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useGlobalContext } from "../../context";
-import Modal from "../../components/Modal";
+import Modal from "../../components/Modal/Modal";
 import "./Header.scss";
 import Hero from "../../assets/images/Hero.png";
 
@@ -9,7 +9,7 @@ const Header = () => {
   const { openModal } = useGlobalContext();
 
   return (
-    <section className="Header">
+    <section className="Header" id="home">
       <div className="Header__container container">
         <div className="Header__container--contents-right">
           <h3 className="Header__text--title ">

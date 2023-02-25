@@ -5,7 +5,7 @@ import "./About.scss";
 
 const About = () => {
   return (
-    <section className="section about">
+    <section className="section about" id="about">
       <div className="section__header container">
         <p className="section__header--title">about mavenFleet</p>
         <p className="section__header--description">

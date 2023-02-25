@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
-import Nav from "./components/Nav";
-import { BrowserRouter } from "react-router-dom";
+
 import "./App.css";
-
-import { Header, About, Values } from "./containers";
-
+import { Header, About, Values, Accordion, Footer } from "./containers";
 import GetStarted from "./components/GetStarted";
-import Footer from "./components/Footer";
-import Accordion from "./components/Accordion";
-import Loading from "./Loading";
+
+import Loading from "./components/Loading";
+import Nav from "./components/Nav";
 
 function App() {
   const [isLoading, setIsLoading] = useState(false);
@@ -17,7 +14,7 @@ function App() {
 
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
 
   return (
@@ -25,19 +22,15 @@ function App() {
       {isLoading ? (
         <Loading />
       ) : (
-        <BrowserRouter>
+        <>
           <Nav />
-          {/* <Routes>
-         <Route path="/" element={<Home/>}></Route>
-         <Route path="/about" element={<Welcome />}></Route>
-        </Routes> */}
           <Header />
           <About />
           <Values />
           <GetStarted />
           <Accordion />
           <Footer />
-        </BrowserRouter>
+        </>
       )}
     </>
   );

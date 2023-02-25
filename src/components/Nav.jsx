@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { links, socials } from "../data";
-// import Logo from "../components/images/logo.svg";
-import logo from "./images/logo.png";
+
+import { socials } from "../data";
+import logo from "../assets/images/logo.png";
 import "./Nav.css";
 
 const Nav = () => {
@@ -29,24 +29,26 @@ const Nav = () => {
   };
 
   return (
-    <header className="header">
-      <nav className="nav container">
+    <nav className="nav">
+      <div className="nav__container container">
         <div className="nav__logo">
           <img src={logo} alt="Nav logo" /> <span>avenFleet</span>
         </div>
 
         <div className="nav__menu" ref={navMenu}>
           <ul className="nav__list">
-            {links.map((link) => {
-              const { id, url, text } = link;
-              return (
-                <li className="nav__item" key={id}>
-                  <Link to={url} className="nav__link" onClick={navLinkClose}>
-                    {text}
-                  </Link>
-                </li>
-              );
-            })}
+            {["home", "about", "contact"].map((link) => (
+              <li className="nav__item" key={`link-${link}`}>
+                <div />
+                <a
+                  href={`#${link}`}
+                  className="nav__link"
+                  onClick={navLinkClose}
+                >
+                  {link}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -66,8 +68,8 @@ const Nav = () => {
             {toggle ? <FaTimes /> : <FaBars />}
           </button>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
   );
 };
 

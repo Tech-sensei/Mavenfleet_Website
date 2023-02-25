@@ -1,7 +1,7 @@
 import React from "react";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 // import ChoiceLists from "./Modal/ChoiceLists";
-import Form from "./Modal/Form";
+import Form from "./Form";
 import { MdClose } from "react-icons/md";
 import "./Modal.css";
 

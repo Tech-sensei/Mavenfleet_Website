@@ -42,8 +42,9 @@ const Form = () => {
 
   return (
     <div className="form__wrapper">
+      <h2>Let's Get Started!</h2> 
       {isClicked ? (
-        <form onSubmit={handleSubmit} autoComplete="off">
+        <form className="modal__form" onSubmit={handleSubmit} autoComplete="off">
           <div className="input-box">
             <label htmlFor="name">Name:</label>
             <input
@@ -99,7 +100,7 @@ const Form = () => {
             )}
           </div>
 
-          <button disabled={isSubmitting} type="submit" className="btn">
+          <button disabled={isSubmitting} type="submit" className="btn submit-btn">
             Submit
           </button>
         </form>
