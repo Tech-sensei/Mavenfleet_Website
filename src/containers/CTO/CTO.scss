@@ -1,0 +1,62 @@
+.CTO {
+  background-color: var(--clr-primary-2);
+  background:  hsla(350, 100%, 29%, 0.3);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    flex-direction: column;
+    gap: 2rem;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 0;
+      }
+
+    &--contents-left {
+      p {
+        margin-bottom: 3rem;
+        font-size: 1.1rem;
+
+        @media screen and (min-width: 1024px) {
+          font-size: 1.2rem;
+          width: 80%;
+        }
+      }
+
+      .CTO-btn {
+        animation: bounce 4s ease-in-out infinite both;
+      }
+
+      @keyframes bounce {
+        from {
+          transform: scale(1);
+          transform-origin: center;
+        }
+        50% {
+          transform: scale(1.1);
+          transform-origin: center;
+        }
+        to {
+          transform: scale(1);
+          transform-origin: center;
+        }
+      }
+    }
+
+    &--contents-right {
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+            @media screen and (min-width: 768px) {
+                width: 100%;
+                height: 300%;
+            }
+        }
+    }
+  }
+}

@@ -10,21 +10,21 @@ const valuesArr = [
     values__icon: <TbChartArrowsVertical />,
     values__header: "Aim to be the best",
     values__desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Adipisci doloribus labore porro odit alias voluptate possimus mollitia voluptates, hic magnam!",
+      "Aiming to be the best means that we are always pushing ourselves to exceed expectations and deliver exceptional results. We set high standards for ourselves and constantly work towards achieving our goals, while also recognizing the importance of teamwork and collaboration.",
   },
   {
     id: 1,
     values__icon: <GiCharacter />,
     values__header: "Cultivating good characters",
     values__desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Adipisci doloribus labore porro odit alias voluptate possimus mollitia voluptates, hic magnam!",
+      "Cultivating good characters is another value that we prioritize at MavenFleet. We believe that strong character traits, such as honesty, integrity, and accountability, are essential for building lasting relationships with our customers and earning their trust and loyalty.",
   },
   {
     id: 2,
     values__icon: <FaUserGraduate />,
     values__header: "Learn fast, yet patient",
     values__desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.Adipisci doloribus labore porro odit alias voluptate possimus mollitia voluptates, hic magnam!",
+      "Learning fast yet being patient is a value that we hold dear at MavenFleet. We recognize the importance of staying ahead of the curve and adapting to changing circumstances, while also taking the time to fully understand and absorb new information. By striking a balance between efficiency and thoroughness, we are able to quickly adapt and respond to new challenges while still maintaining our commitment to excellence.",
   },
 ];
 
