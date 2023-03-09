@@ -4,6 +4,9 @@ import { basicSchema } from "./schemas/index";
 import { useGlobalContext } from "../../context";
 import { GiCheckMark } from "react-icons/gi";
 import "./Form.css";
+import axios from "axios";
+
+const url = "https://mavenfleet.herokuapp.com/api/v2/visitors/sign-up";
 
 const Form = () => {
   const [isClicked, setIsClicked] = useState(true);
@@ -11,10 +14,20 @@ const Form = () => {
 
   const onSubmit = async (values, actions) => {
     console.log(values);
-    console.log(actions);
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
     setIsClicked(false);
+
+    // post request to the backend
+    try {
+      await axios.post(url, {
+        email: values.email,
+        status: values.status,
+        name: values.name,
+      });
+    } catch (error) {
+      console.log({ error: error.message });
+    }
   };
 
   const x = () => {
@@ -32,9 +45,9 @@ const Form = () => {
     handleSubmit,
   } = useFormik({
     initialValues: {
-      email: "",
       name: "",
-      choice: "",
+      email: "",
+      status: "",
     },
     validationSchema: basicSchema,
     onSubmit,
@@ -42,9 +55,13 @@ const Form = () => {
 
   return (
     <div className="form__wrapper">
-      <h2>Let's Get Started!</h2> 
+      <h2>Let's Get Started!</h2>
       {isClicked ? (
-        <form className="modal__form" onSubmit={handleSubmit} autoComplete="off">
+        <form
+          className="modal__form"
+          onSubmit={handleSubmit}
+          autoComplete="off"
+        >
           <div className="input-box">
             <label htmlFor="name">Name:</label>
             <input
@@ -80,9 +97,9 @@ const Form = () => {
           <div className="input-box">
             <label>Job Type</label>
             <select
-              name="choice"
+              name="status"
               onChange={handleChange}
-              value={values.choice}
+              value={values.status}
               placeholder="choose your next step"
               className={errors.choice && touched.choice ? "input-error" : ""}
             >
@@ -91,7 +108,7 @@ const Form = () => {
               <option value="interested in partnership">
                 I'm intrigued and want to unravel partnership opportunities.
               </option>
-              <option value="want to stay in touch">
+              <option value="Want to stay in touch">
                 I want to receive updates.
               </option>
             </select>
@@ -100,7 +117,11 @@ const Form = () => {
             )}
           </div>
 
-          <button disabled={isSubmitting} type="submit" className="btn submit-btn">
+          <button
+            disabled={isSubmitting}
+            type="submit"
+            className="btn submit-btn"
+          >
             Submit
           </button>
         </form>

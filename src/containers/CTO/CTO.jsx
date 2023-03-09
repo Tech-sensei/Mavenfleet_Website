@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import { useGlobalContext } from "../../context";
 import CTO__img from "../../assets/images/cto.png"
