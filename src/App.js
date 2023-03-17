@@ -1,38 +1,22 @@
-import React, { useState, useEffect } from "react";
+import Home from "./pages/Home";
+import Login from "./pages/login";
 
-import "./App.css";
-import { Header, About, Values, Accordion, Footer, CTO } from "./containers";
-
-import Loading from "./components/Loading";
-import Nav from "./components/Nav";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false);
-  useEffect(() => {
-    setIsLoading(true);
-
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-  }, []);
 
   return (
-    <>
-      {isLoading ? (
-        <Loading />
-      ) : (
-        <>
-          <Nav />
-          <Header />
-          <About />
-          <Values />
-          <CTO />
-          <Accordion />
-          <Footer />
-        </>
-      )}
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/admin" element={<Login />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+
   );
+
 }
 
 export default App;

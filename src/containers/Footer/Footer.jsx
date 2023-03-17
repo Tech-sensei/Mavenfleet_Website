@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Fade from "react-reveal/Fade";
 import { useFormik } from "formik";
 import axios from "axios";
 import { FaGithub, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -115,56 +114,54 @@ export const ContactUs = () => {
 ////////////////////////////////////////
 const Footer = () => {
   return (
-    <Fade bottom duration={2000}>
-      <footer className="footer" id="contact">
-        <div className="footer__container container">
-          <div className="footer__container--contents">
-            <div className="footer__header">
-              <img src={logo} alt="Nav logo" /> <span>avenFleet</span>
-            </div>
-
-            <p className="footer__texts">
-              We are Mavenfleet, a group of people with unique voices; doing
-              great things. We learn fast and are patient. We cultivate more
-              good characters and strive for quality.
-            </p>
-
-            <div className="footer__socials">
-              <FaFacebook />
-              <FaTwitter />
-              <FaGithub />
-              <FaLinkedin />
-            </div>
+    <footer className="footer" id="contact">
+      <div className="footer__container container">
+        <div className="footer__container--contents">
+          <div className="footer__header">
+            <img src={logo} alt="Nav logo" /> <span>avenFleet</span>
           </div>
 
-          <div className="footer__container--contents-links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="#faq">F.A.Q</a>
-              </li>
-              <li>
-                <a href="#cookies-policy">Mission</a>
-              </li>
-              <li>
-                <a href="#terms-of-services">Terms Of Service</a>
-              </li>
-              <li>
-                <a href="#support">Support</a>
-              </li>
-            </ul>
-          </div>
+          <p className="footer__texts">
+            We are Mavenfleet, a group of people with unique voices; doing
+            great things. We learn fast and are patient. We cultivate more
+            good characters and strive for quality.
+          </p>
 
-          <div className="footer__container--contents-form">
-            <h3>Stay In Touch</h3>
-            <div>
-              {" "}
-              <ContactUs />
-            </div>
+          <div className="footer__socials">
+            <FaFacebook />
+            <FaTwitter />
+            <FaGithub />
+            <FaLinkedin />
           </div>
         </div>
-      </footer>
-    </Fade>
+
+        <div className="footer__container--contents-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Mission</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer__container--contents-form">
+          <h3>Stay In Touch</h3>
+          <div>
+            {" "}
+            <ContactUs />
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 

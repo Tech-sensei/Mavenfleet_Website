@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import { TbChartArrowsVertical } from "react-icons/tb";
 import { GiCharacter } from "react-icons/gi";
 import { FaUserGraduate } from "react-icons/fa";
@@ -45,17 +44,15 @@ const Values = () => {
             const { id, values__header, values__desc, values__icon } = value;
 
             return (
-              <Fade bottom duration={2000}>
-                <div className="values__content" key={id}>
-                  <div className="values__content--icon">{values__icon}</div>
-                  <div className="values__content--header">
-                    <p>{values__header}</p>
-                  </div>
-                  <div className="values__content--desc">
-                    <p>{values__desc}</p>
-                  </div>
+              <div className="values__content" key={id}>
+                <div className="values__content--icon">{values__icon}</div>
+                <div className="values__content--header">
+                  <p>{values__header}</p>
                 </div>
-              </Fade>
+                <div className="values__content--desc">
+                  <p>{values__desc}</p>
+                </div>
+              </div>
             );
           })}
         </div>

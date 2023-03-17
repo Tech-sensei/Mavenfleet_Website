@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 import { useGlobalContext } from "../../context";
 import CTO__img from "../../assets/images/cto.png"
@@ -19,9 +18,9 @@ const CTO = () => {
         </div>
 
         <div className="CTO__container--contents-right">
-            <img src={CTO__img} alt="CTO"  className="CTO__img"/>
+          <img src={CTO__img} alt="CTO" className="CTO__img" />
         </div>
-        
+
       </div>
     </section>
   );
