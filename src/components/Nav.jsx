@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 import { socials } from "../data";
-import logo from "../assets/images/logo.png";
+import logo from "../assets/images/MavenLogo1.png";
 import "./Nav.css";
 
 const Nav = () => {
@@ -32,12 +32,12 @@ const Nav = () => {
     <nav className="nav">
       <div className="nav__container container">
         <div className="nav__logo">
-          <img src={logo} alt="Nav logo" /> <span>avenFleet</span>
+          <img src={logo} alt="Nav logo" />
         </div>
 
         <div className="nav__menu" ref={navMenu}>
           <ul className="nav__list">
-            {["home", "about", "contact"].map((link) => (
+            {["home", "about","values", "contact"].map((link) => (
               <li className="nav__item" key={`link-${link}`}>
                 <div />
                 <a

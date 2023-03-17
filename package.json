@@ -22,13 +22,11 @@
     "react-apexcharts": "^1.4.0",
     "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.7.1",
-    "react-redux": "^8.0.5",
-    "react-router-dom": "^6.8.1",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0",
     "react-scripts": "5.0.1",
-    "react-toastify": "^9.1.1",
-    "web-vitals": "^3.1.1",
-    "yup": "^1.0.0"
+    "web-vitals": "^3.3.0",
+    "yup": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -54,7 +52,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "description": "MavenFleet helps bridge the gap between visionary companies and quality talent. They have a unique approach to talent development and mentoring that focuses on preparing candidates for specific company needs. Their approach includes skills development and cultural fit, and they work to ensure that candidates are both skilled and a good fit for company culture. MavenFleet's mentoring program currently focuses on Android programming, with the goal of preparing candidates for top talent positions in visionary companies.",
   "main": "index.js",
   "repository": {
     "type": "git",

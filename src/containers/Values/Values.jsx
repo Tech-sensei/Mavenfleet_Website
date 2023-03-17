@@ -30,7 +30,7 @@ const valuesArr = [
 
 const Values = () => {
   return (
-    <section className="values">
+    <section className="values" id="values">
       <div className="values__container container">
         <div className="section__header">
           <p className="section__header--title">Our values define us</p>

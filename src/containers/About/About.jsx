@@ -18,14 +18,14 @@ const About = () => {
           <div className="about__content--text">
             <p>
               MavenFleet helps bridge the gap between visionary companies and
-              quality talent. They have a unique approach to talent
-              development and mentoring that focuses on preparing candidates
-              for specific company needs. Their approach includes skills
-              development and cultural fit, and they work to ensure that
-              candidates are both skilled and a good fit for company culture.
-              MavenFleet's mentoring program currently focuses on Android
-              programming, with the goal of preparing candidates for top
-              talent positions in visionary companies.
+              quality talent. They have a unique approach to talent development
+              and mentoring that focuses on preparing candidates for specific
+              company needs. Their approach includes skills development and
+              cultural fit, and they work to ensure that candidates are both
+              skilled and a good fit for company culture. MavenFleet's mentoring
+              program currently focuses on Android programming, with the goal of
+              preparing candidates for top talent positions in visionary
+              companies.
             </p>
           </div>
         </div>

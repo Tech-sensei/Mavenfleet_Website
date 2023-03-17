@@ -17,15 +17,11 @@ const Header = () => {
             talents
           </h3>
           <p className="Header__text--desc">
-            We are MavenFleet, a group of people with unique voices; doing
-            great things. We learn fast and are patient. We cultivate more
-            good characters and strive for quality.
+            We are MavenFleet, a group of people with unique voices; doing great
+            things. We learn fast and are patient. We cultivate more good
+            characters and strive for quality.
           </p>
-          <button
-            type="button"
-            className="btn Header__btn"
-            onClick={openModal}
-          >
+          <button type="button" className="btn Header__btn" onClick={openModal}>
             Get Started
           </button>
           <Modal />
