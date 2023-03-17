@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 import Hero from "../../assets/images/Hero.png";
 import "./About.scss";
@@ -15,31 +14,27 @@ const About = () => {
       </div>
 
       <div className="about__container container">
-        <Fade right duration={2000}>
-          <div className="about__container--contents-right">
-            <div className="about__content--text">
-              <p>
-                MavenFleet helps bridge the gap between visionary companies and
-                quality talent. They have a unique approach to talent
-                development and mentoring that focuses on preparing candidates
-                for specific company needs. Their approach includes skills
-                development and cultural fit, and they work to ensure that
-                candidates are both skilled and a good fit for company culture.
-                MavenFleet's mentoring program currently focuses on Android
-                programming, with the goal of preparing candidates for top
-                talent positions in visionary companies.
-              </p>
-            </div>
+        <div className="about__container--contents-right">
+          <div className="about__content--text">
+            <p>
+              MavenFleet helps bridge the gap between visionary companies and
+              quality talent. They have a unique approach to talent development
+              and mentoring that focuses on preparing candidates for specific
+              company needs. Their approach includes skills development and
+              cultural fit, and they work to ensure that candidates are both
+              skilled and a good fit for company culture. MavenFleet's mentoring
+              program currently focuses on Android programming, with the goal of
+              preparing candidates for top talent positions in visionary
+              companies.
+            </p>
           </div>
-        </Fade>
+        </div>
 
-        <Fade left duration={2000}>
         <div className="about__container--contents-left">
           <figure className="About__img--box">
             <img src={Hero} alt="About_img" />
           </figure>
         </div>
-        </Fade>
       </div>
     </section>
   );

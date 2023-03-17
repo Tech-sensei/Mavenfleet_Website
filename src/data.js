@@ -1,19 +1,6 @@
 import React from "react";
 import { FaGithub, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-export const links = [
-  {
-    id: 1,
-    url: "/",
-    text: "Home",
-  },
-  {
-    id: 2,
-    url: "/about",
-    text: "about",
-  },
-];
-
 export const socials = [
   {
     id: 1,
