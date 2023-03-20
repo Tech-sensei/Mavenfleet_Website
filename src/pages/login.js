@@ -16,7 +16,7 @@ const Login = () => {
             const response = await axios.post('https://mavenfleet.herokuapp.com/api/v1/admin/login', { email, password });
             const { token } = response.data;
             localStorage.setItem('token', token);
-            history('/home');
+            history('/admin-dashboard');
         } catch (error) {
             console.log(error);
         }
