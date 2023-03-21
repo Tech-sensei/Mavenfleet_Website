@@ -122,9 +122,9 @@ const Footer = () => {
           </div>
 
           <p className="footer__texts">
-            We are Mavenfleet, a group of people with unique voices; doing great
-            things. We learn fast and are patient. We cultivate more good
-            characters and strive for quality.
+            We are Mavenfleet, a group of people with unique voices; doing
+            great things. We learn fast and are patient. We cultivate more
+            good characters and strive for quality.
           </p>
 
           <div className="footer__socials">

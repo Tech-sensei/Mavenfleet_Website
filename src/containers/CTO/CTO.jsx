@@ -18,9 +18,9 @@ const CTO = () => {
         </div>
 
         <div className="CTO__container--contents-right">
-            <img src={CTO__img} alt="CTO"  className="CTO__img"/>
+          <img src={CTO__img} alt="CTO" className="CTO__img" />
         </div>
-        
+
       </div>
     </section>
   );
