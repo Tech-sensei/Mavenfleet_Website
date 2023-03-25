@@ -26,7 +26,7 @@ const Form = () => {
         name: values.name,
       });
     } catch (error) {
-      console.log({ error: error.message });
+      alert({ error: error.message });
     }
   };
 
